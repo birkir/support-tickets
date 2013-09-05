@@ -9,7 +9,7 @@
 		<title><?=$title.(empty($sub) ? NULL : ' › '.$sub);?></title>
 
 		<!-- Bootstrap core CSS -->
-		<link href="/media/css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 		<link href="/media/css/select2.css" rel="stylesheet">
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -17,8 +17,6 @@
 			<script src="/media/js/html5shiv.js"></script>
 			<script src="/media/js/respond.min.js"></script>
 		<![endif]-->
-
-		<?php $controller = Request::current()->controller(); ?>
 	</head>
 	<body>
 		<div class="navbar navbar-default navbar-static-top">
@@ -51,8 +49,8 @@
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="/media/js/jquery.js"></script>
-		<script src="/media/js/bootstrap.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 		<script src="/media/js/select2.min.js"></script>
 		<script src="/media/js/application.js"></script>
 	</body>

@@ -62,7 +62,7 @@ class Controller_Ticket extends Controller_Template {
 		$this->view = View::factory('Ticket/Detail')
 		->set('item', $item)
 		->set('verified', $this->auth->logged_in('verified'))
-		->set('owner', $this->user->id === $item->user->id)
+		->set('owner', $this->user AND $this->user->id === $item->user->id)
 		->set('admin', $this->auth->logged_in('admin'))
 		->bind('messages', $messages);
 

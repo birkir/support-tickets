@@ -38,7 +38,8 @@ class Controller_Template extends Controller {
 		// initialize View template
 		$this->template = View::factory($this->template)
 		->set('auth', $this->auth)
-		->set('title', 'Support Tickets');
+		->set('title', 'Support Tickets')
+		->set('controller', Request::current()->controller());
 	}
 
 	/**
